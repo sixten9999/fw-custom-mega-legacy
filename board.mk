@@ -1,5 +1,5 @@
 BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp \
-  $(BOARD_DIR)/board_storage.cpp \
+ # $(BOARD_DIR)/board_storage.cpp \
     $(BOARD_DIR)/default_tune.cpp \
 
 
@@ -20,6 +20,6 @@ DDEFS += -DRAM_UNUSED_SIZE=100
 # USE_OPT += -Wl,--defsym=FLASH_SIZE=768k
 
 # This board uses ChibiOS MFS driver on external SPI flash
-include $(PROJECT_DIR)/hw_layer/ports/stm32/use_higher_level_flash_api.mk
+#include $(PROJECT_DIR)/hw_layer/ports/stm32/use_higher_level_flash_api.mk
 #Serial flash driver
-include $(PROJECT_DIR)/hw_layer/drivers/flash/sst26f_jedec.mk
+#include $(PROJECT_DIR)/hw_layer/drivers/flash/sst26f_jedec.mk
